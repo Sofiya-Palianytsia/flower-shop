@@ -1,0 +1,410 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa|Pacifico&display=swap");
+
+:root {
+    --main-color: black;
+    --accent-color:#E9E1DE;
+    font-family: "Comfortaa", cursive;
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 980px;
+    margin: auto;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    background-color: #f8f9fa;
+}
+
+header #logo {
+    font-family: "Pacifico", cursive;
+    color:#D90006;
+    font-size: 3rem;
+    text-align: center;
+    margin-right: 30px;
+}
+
+.navbar-nav {
+  font-size: 1.3rem;
+  letter-spacing: 0.7px;
+}
+
+header .menu {
+    font-family: "Pacifico", cursive;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    padding: 0;
+}
+
+header .menu a {
+    font-family: "Pacifico", cursive;
+    color: var(--main-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid transparent;
+    padding: 5px;
+}
+
+header .menu a:hover {
+    background-color: var(--accent-color);
+}
+
+@media (min-width: 550px) {
+    header nav {
+        display: flex;
+        align-items: center;
+    }
+    header .menu {
+        flex: 1;
+    }
+}
+
+header .banner {
+    min-height: 500px;
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.banner h1 {
+    font-size: 2.5rem;
+    font-family: "Comfortaa", cursive;
+    color:white;
+    font-weight: bold;
+    text-align: right;
+    text-shadow: 1px 1px 3px #000000;
+    margin: 30px;
+}
+
+.banner p {
+    font-family: "Pacifico", cursive;
+    font-size: 1.5rem;
+    color:white;
+    text-shadow: 1px 1px 3px #000000;
+    margin: 30px;
+}
+
+.banner a {
+    margin: 50px;
+}
+
+#about-us-article h2 {
+    text-align: center;
+    font-family: "Comfortaa", cursive;
+    font-size: 2.5rem;
+    margin: 30px;
+}
+
+#about-us-article p {
+    letter-spacing: 1.3px;
+}
+
+/* спеціальні пропозиції*/
+@media (min-width: 500px) {
+    div #product-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 3px;
+    }
+}
+
+@media (min-width: 660px) {
+    div #product-list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 980px) {
+    div #product-list {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+#offer h2 {
+    font-size: 2.5rem;
+    font-family: "Comfortaa", cursive;
+    text-align: center;
+    margin: 30px;
+}
+
+.offer {
+    text-align: center;
+    margin: 10px;
+}
+
+main .product {
+    border: solid 0.5px black;
+    border-radius: 0.25rem;
+    box-shadow: 0px 0px 1px #000000;
+    margin: 5px;
+}
+
+div .product img {
+    display: block;
+    width: 100%;
+}
+
+div .product h3 {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 20px 0px 20px 0px;
+}
+
+div .product p {
+    text-align: center;
+    font-size: 1rem;
+    margin: 20px 0px 20px 0px;
+}
+
+div .product-button {
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+}
+
+.btn-info {
+    color: black;
+    background-color: #E9E1DE;
+    border-color:  #E9E1DE;
+}
+
+.btn-info:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    border: 1px solid #D90006;
+}
+
+.btn-info.focus, .btn-info:focus {
+    box-shadow: 0 0 0 0.2rem white;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color:  #D90006;
+    border-color: #D90006;
+}
+
+.btn-primary:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    border: 1px solid #D90006;
+}
+
+
+/*feedback*/
+@media (min-width: 500px) {
+    .feedback-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 3px;
+    }
+}
+
+@media (min-width: 980px) {
+    .feedback-list {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 3px;
+    }
+}
+
+#feedback-heading h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: "Comfortaa", cursive;
+    margin: 30px;
+}
+
+
+div .feedback {
+    padding: 50px;
+}
+
+div .feedback img {
+    display: block;
+    width: 100%;
+}
+
+div .feedback p {
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 50px;
+}
+
+/*footer*/
+
+.footer-distributed{
+	background-color: white;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+
+	padding: 25px 20px;
+	margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+    font-family: "Pacifico", cursive;
+    color:#D90006;
+    font-size: 3rem;
+	margin: 0;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: black;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #D90006;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  black;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-right img {
+    display: block;
+    width: 100%;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
