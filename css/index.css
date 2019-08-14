@@ -225,7 +225,8 @@ div .feedback {
 
 div .feedback img {
     display: block;
-    width: 100%;
+    width: 75%;
+
 }
 
 div .feedback p {
@@ -270,9 +271,13 @@ div .feedback p {
 /* Footer left */
 
 .footer .footer-left{
-	width: 35%;
+	width: 25%;
 }
 
+.footer-left img {
+    display: block;
+    width: 100%;
+}
 /* The company logo */
 
 .footer h3{
@@ -286,28 +291,28 @@ div .feedback p {
 
 .footer .footer-links{
 	color:  #ffffff;
-	margin: 20px 0 12px;
 	padding: 0;
 }
 
 .footer .footer-links a{
-	display:inline-block;
+	display: inline-block;
 	line-height: 1.8;
 	text-decoration: none;
 	color:  inherit;
-    margin: 5px;
+    margin: 0px 15px 0px 15px;
 }
 
-.footer .footer-links img {
-  width: 40px;
-  height: 40px;
+.footer-links img {
+    width: 40px;
+    height: 40px;
 }
 
 .footer .footer-company-name{
 	color:  #8f9296;
 	font-size: 14px;
 	font-weight: normal;
-	margin: 30px 0px 0px 0px;
+	margin: 0;
+    text-align: center;
 }
 
 /* Footer Center */
@@ -317,7 +322,7 @@ div .feedback p {
 }
 
 .footer .footer-center div{
-	margin:  25px 10px 10px 10px;
+	margin: 15px 30px 15px 30px;
 }
 
 .footer .footer-center img {
@@ -349,16 +354,18 @@ div .feedback p {
 /* Footer Right */
 
 .footer .footer-right{
-	width: 25%;
+	width: 35%;
 }
 
-.footer-right img {
-    display: block;
-    width: 200px;
-    height: auto;
+.footer .footer-right div{
+	margin: 15px 30px 15px 30px;
 }
 
-@media (max-width: 880px) {
+.footer-right h3 {
+    text-align: center;
+}
+
+@media (max-width: 980px) {
 
 	.footer {
 		font: bold 14px sans-serif;
@@ -366,9 +373,11 @@ div .feedback p {
 
 	.footer .footer-left,
 	.footer .footer-center,
-	.footer .footer-right {
+	.footer .footer-right{
 		display: block;
 		width: 100%;
 		margin-bottom: 40px;
 		text-align: center;
 	}
+
+}
